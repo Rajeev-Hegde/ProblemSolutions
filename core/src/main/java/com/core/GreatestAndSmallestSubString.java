@@ -1,5 +1,4 @@
-
-
+package com.core;
 
 
 public class GreatestAndSmallestSubString {
