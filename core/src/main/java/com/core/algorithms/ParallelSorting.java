@@ -33,5 +33,6 @@ public class ParallelSorting {
     public static void main(String[] args) {
         Integer[] values = new Integer[]{2,4,5,13,7,35,12};
         ParallelSorting.parallelSortArray(values);
+        printArray(values);
     }
 }
