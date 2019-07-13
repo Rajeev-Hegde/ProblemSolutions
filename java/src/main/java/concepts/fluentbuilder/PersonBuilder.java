@@ -4,6 +4,11 @@ public class PersonBuilder<SELF extends PersonBuilder<SELF>> {
 
     protected Person person = new Person();
 
+
+    public PersonAddressBuilder lives(){
+        return new PersonAddressBuilder(person);
+    }
+
     public SELF firstName(String firstName){
         person.setFirstName(firstName);
         return self();
