@@ -1,6 +1,5 @@
-package algorithms;
+package problems;
 
-import java.io.IOException;
 import java.util.Scanner;
 
 public class OccuranceofA {

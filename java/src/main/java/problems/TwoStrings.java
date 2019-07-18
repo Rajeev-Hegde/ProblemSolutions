@@ -1,8 +1,6 @@
-package algorithms;
+package problems;
 
 import java.util.*;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class TwoStrings {
 
