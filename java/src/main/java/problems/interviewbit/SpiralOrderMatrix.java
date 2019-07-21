@@ -85,9 +85,6 @@ public class SpiralOrderMatrix {
 
         }
 
-
-
-
         return result;
     }
 
@@ -95,3 +92,51 @@ public class SpiralOrderMatrix {
 
     }
 }
+
+
+
+//GO language solution
+
+/*
+ func spiralOrder(A [][]int) []int {
+	var result = []int{}
+	m := len(A)
+	n := len(A[0])
+	t := 0
+	r := n - 1
+	b := m - 1
+	l := 0
+	dir := 0
+
+	for t <= b && l <= r {
+		if dir == 0 {
+			for i := l; i <= r; i++ {
+				result = append(result, A[t][i])
+			}
+			t++
+		}
+		if dir == 1 {
+			for i := t; i <= b; i++ {
+				result = append(result, A[i][r])
+
+			}
+			r--
+		}
+		if dir == 2 {
+			for i := r; i >= l; i-- {
+				result = append(result, A[b][i])
+			}
+			b--
+		}
+		if dir == 3 {
+			for i := b; i >= t; i-- {
+				result = append(result, A[i][l])
+
+			}
+			l++
+		}
+		dir = (dir + 1) % 4
+	}
+	return result
+}
+ */
