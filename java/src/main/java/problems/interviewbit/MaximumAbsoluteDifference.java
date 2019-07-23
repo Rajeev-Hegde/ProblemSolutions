@@ -19,7 +19,6 @@ public class MaximumAbsoluteDifference {
             max2 = Math.max(max2, A.get(i) - i);
             min2 = Math.min(min2, A.get(i) - i);
         }
-
         return Math.max(max1 - min1, max2 - min2);
     }
 
