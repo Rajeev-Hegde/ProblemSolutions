@@ -45,6 +45,26 @@ public class MaxDistance {
     }
 
 
+    //recursive solution
+    public int recursiveSolution(List<Integer> list){
+        int size = list.size();
+
+        if (size <= 1) {
+            return -1;
+        }
+
+        if (list.get(0) <= list.get(size - 1)) {
+            return size - 1;
+        }
+
+        // Max between list[0:size-1] and list[1:size]
+        return Math.max(
+                maximumGap(list.subList(0, size - 1)),
+                maximumGap(list.subList(1, size))
+        );
+    }
+
+
     public static void main(String[] args) {
         System.out.println(new MaxDistance().maximumGap(Arrays.asList(3, 5, 4, 2)));
     }
