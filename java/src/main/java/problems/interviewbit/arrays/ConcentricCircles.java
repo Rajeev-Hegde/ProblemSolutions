@@ -1,4 +1,4 @@
-package problems.interviewbit;
+package problems.interviewbit.arrays;
 
 import java.util.ArrayList;
 
