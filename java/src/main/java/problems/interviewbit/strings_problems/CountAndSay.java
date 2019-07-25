@@ -31,6 +31,6 @@ public class CountAndSay {
     }
 
     public static void main(String[] args) {
-        System.out.println(new CountAndSay().countAndSay(4));
+        System.out.println(new CountAndSay().countAndSay(100));
     }
 }
