@@ -1,6 +1,5 @@
-package problems.interviewbit;
+package problems.interviewbit.arrays;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
