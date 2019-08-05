@@ -36,6 +36,5 @@ public class RemoveNthNodeFromListEnd {
     }
 
     public static void main(String[] args) {
-
     }
 }
