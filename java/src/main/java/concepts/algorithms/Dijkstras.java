@@ -33,9 +33,9 @@ public class Dijkstras {
         vertexVsShortestDistanceFromSource.put(sourceVertex, 0);
         //visitedVertices[sourceVertex]=true;
 
-        for (int i = 0; i < totalVertices; i++) {
+        for (int i = 0; i < totalVertices-1; i++) {
             int minDistanceVertex = getMinDistanceVertex(vertexVsShortestDistanceFromSource, visitedVertices);
-            visitedVertices[i] = true;
+            visitedVertices[minDistanceVertex] = true;
 
             for (int j = 0; j < totalVertices; j++) {
 
