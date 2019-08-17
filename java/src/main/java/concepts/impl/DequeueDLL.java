@@ -74,7 +74,8 @@ public class DequeueDLL<E>{
             tail = lastElement.prev;
             if(lastElement == head)
                 head= tail;
-            tail.next=null;
+            if(tail!=null)
+                tail.next=null;
             lastElement.prev= null;
             return lastElement;
         }
@@ -125,5 +126,17 @@ public class DequeueDLL<E>{
         dequeueDLL.addLast(4);
         dequeueDLL.addLast(5);
         System.out.println(dequeueDLL.getAllValues());
+        dequeueDLL.removeLast();
+        System.out.println(dequeueDLL.getAllValues());
+        dequeueDLL.removeFirst();
+        System.out.println(dequeueDLL.getAllValues());
+        dequeueDLL.removeLast();
+        dequeueDLL.removeLast();
+        dequeueDLL.removeLast();
+        dequeueDLL.removeLast();
+        System.out.println(dequeueDLL.getAllValues());
+        dequeueDLL.addLast(5);
+        System.out.println(dequeueDLL.getAllValues());
+
     }
 }
