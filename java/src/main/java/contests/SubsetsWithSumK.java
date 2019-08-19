@@ -15,21 +15,25 @@ public class SubsetsWithSumK {
     public static boolean findAllSubSetsWithSumK(List<Integer> array, List<Integer>subsetArray,int pos,int sum){
 
 
-        if(pos> array.size())
-            return false;
-
-        if(sum-array.get(pos)<0) {
+        if(pos> array.size()) {
+            possibleSubsets.add(new ArrayList<>(subsetArray));
             return false;
         }
+
         subsetArray.add(array.get(pos));
         if(!findAllSubSetsWithSumK(array, subsetArray, pos + 1, sum-array.get(pos)))
             return false;
         subsetArray.remove(array.get(pos));
-        if(! findAllSubSetsWithSumK(array, subsetArray, pos + 1, sum))
+        if(! findAllSubSetsWithSumK(array, subsetArray, pos + 2, sum))
             return false;
         subsetArray.remove(array.get(pos));
+        if(sum<0) {
+            subsetArray.remove(subsetArray.size()-1);
+            return false;
+        }
         if(sum==0) {
             possibleSubsets.add(new ArrayList<>(subsetArray));
+            subsetArray.remove(subsetArray.size()-1);
             return true;
         }
         return false;
