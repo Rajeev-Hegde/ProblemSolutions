@@ -1,5 +1,7 @@
 package problems.interviewbit.trees;
 
+import problems.TreeNode;
+
 import java.util.*;
 
 public class VerticalOrderTraversal {

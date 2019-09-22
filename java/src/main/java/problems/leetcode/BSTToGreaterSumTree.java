@@ -1,7 +1,7 @@
 package problems.leetcode;
 
 
-import problems.interviewbit.trees.TreeNode;
+import problems.TreeNode;
 
 /**
  * Given the root of a binary search tree with distinct values,

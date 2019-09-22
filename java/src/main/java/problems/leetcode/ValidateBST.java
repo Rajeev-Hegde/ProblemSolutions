@@ -1,6 +1,6 @@
 package problems.leetcode;
 
-import problems.interviewbit.trees.TreeNode;
+import problems.TreeNode;
 
 public class ValidateBST {
 

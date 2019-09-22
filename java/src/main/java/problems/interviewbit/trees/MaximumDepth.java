@@ -1,5 +1,7 @@
 package problems.interviewbit.trees;
 
+import problems.TreeNode;
+
 public class MaximumDepth {
 
     public int maxDepth(TreeNode A) {

@@ -1,4 +1,4 @@
-package problems.interviewbit.trees;
+package problems;
 
 public class TreeNode {
     public int val;

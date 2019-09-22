@@ -1,6 +1,6 @@
 package problems.leetcode.top_interview_questions;
 
-import problems.interviewbit.trees.TreeNode;
+import problems.TreeNode;
 
 public class BinaryTreeMinDepth {
 

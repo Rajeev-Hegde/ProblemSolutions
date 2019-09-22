@@ -1,6 +1,6 @@
 package problems.leetcode.medium;
 
-import problems.interviewbit.trees.TreeNode;
+import problems.TreeNode;
 
 import java.util.Stack;
 
