@@ -1,6 +1,6 @@
 package problems.interviewbit.heaps_and_maps;
 
-import problems.interviewbit.ListNode;
+import problems.ListNode;
 
 import java.util.ArrayList;
 import java.util.Arrays;

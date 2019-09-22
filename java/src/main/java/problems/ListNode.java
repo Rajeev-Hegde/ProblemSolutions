@@ -1,4 +1,4 @@
-package problems.interviewbit;
+package problems;
 
 public class ListNode {
     public int val;
