@@ -63,11 +63,10 @@ public class WordBreak2 {
 //                Arrays.asList("cat", "cats", "and", "sand", "dog")));
         //System.out.println(new WordBreak2().wordBreak("pineapplepenapple",
         //        Arrays.asList("apple", "pen", "applepen", "pine", "pineapple")));
-        System.out.println(new WordBreak2().wordBreak("aaaaaaaaaaaaaa",
-                        Arrays.asList("aaaa","aaa")));
-//        System.out.println( new WordBreak2().wordBreak("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" +
-//                        "aaaaaaaaaaaaaaaaaabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-//                Arrays.asList("a","aa","aaa","aaaa","aaaaa","aaaaaa","aaaaaaa","aaaaaaaa","aaaaaaaaa","aaaaaaaaaa")));
+//        System.out.println(new WordBreak2().wordBreak("aaaaaaaaaaaaaa",
+//                        Arrays.asList("aaaa","aaa")));
+        System.out.println( new WordBreak2().wordBreak("aaaabaaaaabaaaaaaabaaaaaabaaaaaaab",
+                Arrays.asList("a","aab","aaa","aaaa","aaaaa","aaaaaa","aaaaaaa","aaaaaaaa","aaaaaaaaa","aaaaaaaaaa")));
         //[aaa aaaa aaa aaaa, aaaa aaa aaa aaaa, aaaa aaa aaaa aaa, aaaa aaaa aaa aaa, aaa aaaa aaaa aaa, aaa aaa aaaa aaaa]
         //[aaa aaaa aaa aaaa, aaaa aaa aaa aaaa, aaaa aaa aaaa aaa, aaaa aaaa aaa aaa, aaa aaaa aaaa aaa]
     }
