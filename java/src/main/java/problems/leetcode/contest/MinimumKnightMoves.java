@@ -2,6 +2,10 @@ package problems.leetcode.contest;
 
 import java.util.Vector;
 
+
+/**
+ * Slight modified version of knight problem where knight is assumed to be at center of board and
+ */
 public class MinimumKnightMoves {
 
     static class cell
