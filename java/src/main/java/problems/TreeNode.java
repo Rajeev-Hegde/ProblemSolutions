@@ -10,4 +10,13 @@ public class TreeNode {
         left = null;
         right = null;
     }
+
+    @Override
+    public String toString() {
+        return "TreeNode{" +
+                "val=" + val +
+                ", left=" + left +
+                ", right=" + right +
+                '}';
+    }
 }

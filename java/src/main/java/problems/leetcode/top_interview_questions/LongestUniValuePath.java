@@ -2,6 +2,8 @@ package problems.leetcode.top_interview_questions;
 
 import problems.TreeNode;
 
+import java.util.Arrays;
+
 public class LongestUniValuePath {
 
     public int longestUnivaluePath(TreeNode root) {
@@ -12,6 +14,7 @@ public class LongestUniValuePath {
 
     private int helper(TreeNode node, int[] res) {
         if (node == null) return 0;
+        Arrays.asList();
         int left = helper(node.left, res);
         int right = helper(node.right, res);
         int rootWithLeft = 0, rootWithRight = 0;
