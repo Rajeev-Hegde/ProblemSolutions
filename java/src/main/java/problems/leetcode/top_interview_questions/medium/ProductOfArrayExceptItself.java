@@ -1,6 +1,8 @@
 package problems.leetcode.top_interview_questions.medium;
 
 
+import java.util.Arrays;
+
 /**
  * INTERESTING_QUESTION
  *
@@ -34,6 +36,6 @@ public class ProductOfArrayExceptItself {
     }
 
     public static void main(String[] args) {
-        System.out.println(new ProductOfArrayExceptItself().productExceptSelf(new int[]{1,2,3,4}));
+        System.out.println(Arrays.toString(new ProductOfArrayExceptItself().productExceptSelf(new int[]{1, 2, 3, 4})));
     }
 }
