@@ -19,7 +19,6 @@ public class NumOfUniqueEmails {
     public int numUniqueEmailsSolution2(String[] emails) {
         int counter = 0;
         Set<String> emailSet = new HashSet<>();
-
         for (String s : emails) {
             int index = -1;
             StringBuilder sb = new StringBuilder();
