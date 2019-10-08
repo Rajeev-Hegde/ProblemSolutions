@@ -38,4 +38,21 @@ public class LoggerRateLimiter {
         ok.put(message, timestamp + 10);
         return true;
     }
+
+
+    private Map<String, Integer> msgMap = new HashMap<>();
+    private static final Object lock= new Object();
+    public boolean shouldPrintMessageSynchronised(int timestamp, String message) {
+        Integer ts = msgMap.get(message);
+        if (ts == null || timestamp - ts >= 10) {
+            synchronized (lock) {
+                Integer ts2 = msgMap.get(message);
+                if (ts == null || timestamp - ts2 >= 10) {
+                    msgMap.put(message, timestamp);
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }
