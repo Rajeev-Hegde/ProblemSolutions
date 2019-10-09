@@ -2,6 +2,12 @@ package problems.interviewbit.mock_interviews;
 
 import com.google.gson.Gson;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
+/**
+ * IMPORTANT
+ */
 public class InvertBinaryTree {
 
 
@@ -53,6 +59,22 @@ public class InvertBinaryTree {
         System.out.println(new Gson().toJson(new InvertBinaryTree().invertTree(treeNode)));
     }
 
+
+
+    public TreeNode invertTreeIterative(TreeNode root) {
+        if (root == null) return null;
+        Queue<TreeNode> queue = new LinkedList<TreeNode>();
+        queue.add(root);
+        while (!queue.isEmpty()) {
+            TreeNode current = queue.poll();
+            TreeNode temp = current.left;
+            current.left = current.right;
+            current.right = temp;
+            if (current.left != null) queue.add(current.left);
+            if (current.right != null) queue.add(current.right);
+        }
+        return root;
+    }
     /*
     SWAPS first and then goes inside. Try this solution if above solution dosen't work
     public TreeNode invertTree(TreeNode A) {
