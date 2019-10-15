@@ -1,5 +1,8 @@
 package problems.leetcode.top_interview_questions.easy;
 
+/**
+ * IMPORTANT
+ */
 public class PowerOf2 {
 
     public boolean isPowerOfTwo(int n) {
