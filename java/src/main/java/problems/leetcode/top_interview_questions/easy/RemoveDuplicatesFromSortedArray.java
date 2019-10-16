@@ -2,6 +2,8 @@ package problems.leetcode.top_interview_questions.easy;
 
 /**
  * IMPORTANT
+ * Time Complexity: O(n)
+ * Space Complexity: O(1)
  */
 public class RemoveDuplicatesFromSortedArray {
 
