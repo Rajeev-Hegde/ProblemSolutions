@@ -5,8 +5,8 @@ public class MaximizeDistToClosestPerson {
     public int maxDistToClosest(int[] seats) {
         int[] leftDist = new int[seats.length];
         int[] rightDist = new int[seats.length];
-        leftDist[0]= seats.length;
-        rightDist[seats.length-1]= seats.length;
+        leftDist[0]= seats[0]==1? 0: seats.length;
+        rightDist[seats.length-1]= seats[seats.length-1]==1? 0: seats.length;
         for(int i=1; i< seats.length; i++){
             if(seats[i] == 1){
                 leftDist[i]= 0;
@@ -33,10 +33,10 @@ public class MaximizeDistToClosestPerson {
                 }
             }
         }
-        return pos;
+        return maxDist;
     }
 
     public static void main(String[] args) {
-        System.out.println(new MaximizeDistToClosestPerson().maxDistToClosest(new int[]{1,0,0,0,1,0,1}));
+        System.out.println(new MaximizeDistToClosestPerson().maxDistToClosest(new int[]{1,0,0,0}));
     }
 }
