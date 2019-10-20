@@ -1,9 +1,6 @@
 package problems.leetcode.top_interview_questions.medium;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.*;
 
 /**
  * IMPORTANT
@@ -49,5 +46,12 @@ public class CampusBikes {
 
     private int getDis(int[] worker, int[] bike){
         return Math.abs(worker[0] - bike[0]) + Math.abs(worker[1] - bike[1]);
+    }
+
+
+    public static void main(String[] args) {
+        int[][] workers = new int[][]{{0,0},{2,1}};
+        int[][] bikes = new int[][]{{1,2},{3,3}};
+        System.out.println(Arrays.toString(new CampusBikes().assignBikes(workers, bikes)));
     }
 }
