@@ -41,6 +41,7 @@ public class ClimbingStairs {
 
     public static void main(String[] args) {
 
-        System.out.println(new ClimbingStairs().climbStairs(18));
+        //System.out.println(new ClimbingStairs().climbStairs(18));
+        System.out.println(Integer.MAX_VALUE);
     }
 }
