@@ -1,4 +1,4 @@
-package problems.leetcode.medium;
+package problems.leetcode.top_interview_questions.medium;
 
 import java.util.*;
 
