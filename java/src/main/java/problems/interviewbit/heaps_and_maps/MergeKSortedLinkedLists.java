@@ -7,6 +7,10 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
+/**
+ * IMPORTANT
+ * https://leetcode.com/problems/merge-k-sorted-lists/submissions/
+ */
 public class MergeKSortedLinkedLists {
 
 
@@ -86,7 +90,7 @@ public class MergeKSortedLinkedLists {
                 tempLists[j++] = mergeTwoNodes(lists[i], lists[i+1]);
             }
             if(lists.length%2!=0)
-                tempLists[j++] = lists[i];
+                tempLists[j] = lists[i];
             lists = tempLists;
         }
         return lists[0];
