@@ -8,7 +8,7 @@ public class HotelBookingsPossible {
         Collections.sort(arrive);
         Collections.sort(depart);
         int roomsRequired=0,i=0,j=0;
-        while(i<arrive.size()  && j<arrive.size() && roomsRequired<=K){
+        while(i<arrive.size()  && j<depart.size() && roomsRequired<=K){
             if(arrive.get(i)<depart.get(j) ){
                 i++;
                 roomsRequired++;
