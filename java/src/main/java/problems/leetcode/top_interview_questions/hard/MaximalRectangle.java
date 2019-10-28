@@ -2,6 +2,10 @@ package problems.leetcode.top_interview_questions.hard;
 
 import java.util.Stack;
 
+/**
+ * IMPORTANT
+ * https://leetcode.com/problems/maximal-rectangle/
+ */
 public class MaximalRectangle {
 
     public int maximalRectangle(char[][] matrix) {
