@@ -11,6 +11,15 @@ public class MergeKSortedLinkedLists {
 
 
     public ListNode mergeTwoNodes(ListNode node1, ListNode node2){
+
+        if(node1==null && node2==null)
+            return null;
+        else if(node1== null)
+            return node2;
+        else if(node2 == null)
+            return node1;
+
+
         ListNode head=null, tail=null;
 
         while(node1!=null && node2!=null){
@@ -56,6 +65,9 @@ public class MergeKSortedLinkedLists {
     }
 
     public ListNode mergeKLists(ArrayList<ListNode> a) {
+
+        if(a.size()==0) return null;
+
         ListNode mergedNode=a.get(0);
         for(int i=1; i< a.size(); i++){
             mergedNode = mergeTwoNodes(mergedNode,a.get(i));
@@ -64,7 +76,6 @@ public class MergeKSortedLinkedLists {
     }
 
     public static void main(String[] args) {
-        PriorityQueue<ListNode> pq = new PriorityQueue<>(Comparator.comparingInt(a -> a.val));
         ListNode first= new ListNode(1);
         first.next= new ListNode(2);
         first.next.next = new ListNode(3);
