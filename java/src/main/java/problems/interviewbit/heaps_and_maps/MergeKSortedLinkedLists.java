@@ -75,6 +75,23 @@ public class MergeKSortedLinkedLists {
         return mergedNode;
     }
 
+
+    public ListNode mergeKListsEfficient(ListNode[] lists) {
+        if(lists.length==0) return null;
+        while(lists.length!=1){
+            int i=0;
+            int j=0;
+            ListNode[] tempLists = new ListNode[lists.length%2==0? lists.length/2: lists.length/2+1];
+            for(;i+1< lists.length; i+=2){
+                tempLists[j++] = mergeTwoNodes(lists[i], lists[i+1]);
+            }
+            if(lists.length%2!=0)
+                tempLists[j++] = lists[i];
+            lists = tempLists;
+        }
+        return lists[0];
+    }
+
     public static void main(String[] args) {
         ListNode first= new ListNode(1);
         first.next= new ListNode(2);
